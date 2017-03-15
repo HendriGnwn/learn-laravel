@@ -23,8 +23,12 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+//		\Laravel\Passport\Passport::tokensCan([
+//			'user' => 'Access User',
+//		]);
+		
         $this->registerPolicies();
 
-        //
+        \Laravel\Passport\Passport::routes();
     }
 }
