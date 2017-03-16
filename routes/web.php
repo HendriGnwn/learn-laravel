@@ -18,3 +18,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/test', function () {
+	//var_dump(\App\User::with('clients')->find(Auth::id())->client);die;
+	foreach (Auth::user()->clients as $client) {
+		var_dump($client);
+	}
+	die;
+	//return 'test';
+})->middleware('auth');

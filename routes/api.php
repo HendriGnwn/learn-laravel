@@ -13,13 +13,16 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:apis')->get('/user', function (Request $request) {
+Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
 Route::group(['prefix' => 'v1'], function () {
-	Route::get('user', function () {
-		var_dump('ss');
-		return 'utest';
+	Route::group([
+		'middleware' => ['client_credentials:user'],
+	], function () {
+		Route::get('test', function() {
+			return 'okee';
+		});
 	});
 });
