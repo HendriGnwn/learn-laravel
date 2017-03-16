@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6371d20c7f8d6d741ba8e1809cd9707a",
-    "content-hash": "400d280b0b8de51a96a19ba84998ebcd",
+    "hash": "a47c2a5cac314b2f13479592d63de50e",
+    "content-hash": "6817b7efd4e1d610f4235fc73dadc243",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -707,6 +707,60 @@
                 "psysh"
             ],
             "time": "2016-12-30 18:13:17"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/7570f25d58a00fd6909c0563808590f9cdb14d47",
+                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.4.*",
+                "illuminate/routing": "5.4.*",
+                "illuminate/session": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "illuminate/view": "5.4.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "illuminate/database": "5.4.*",
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "http://laravelcollective.com",
+            "time": "2017-01-26 19:27:05"
         },
         {
             "name": "lcobucci/jwt",
@@ -2586,6 +2640,58 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "appzcoder/crud-generator",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/appzcoder/crud-generator.git",
+                "reference": "93ec6907d78cbadc381f56d054565f31ce46944b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/appzcoder/crud-generator/zipball/93ec6907d78cbadc381f56d054565f31ce46944b",
+                "reference": "93ec6907d78cbadc381f56d054565f31ce46944b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.1",
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.6",
+                "orchestra/testbench": "^3.3",
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Appzcoder\\CrudGenerator\\": "src/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sohel Amin",
+                    "email": "sohelamincse@gmail.com",
+                    "homepage": "http://www.appzcoder.com"
+                }
+            ],
+            "description": "Laravel 5 CRUD Generator",
+            "keywords": [
+                "crud",
+                "crud generator",
+                "laravel",
+                "laravel crud generator"
+            ],
+            "time": "2017-02-11 12:25:38"
+        },
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",

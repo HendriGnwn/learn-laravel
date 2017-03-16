@@ -27,3 +27,15 @@ Route::get('/test', function () {
 	die;
 	//return 'test';
 })->middleware('auth');
+
+Route::group([
+	'prefix' => 'admin', 
+	'middleware' => 'auth'
+	], function () {
+		Route::resource('posts', 'Admin\\PostsController');
+		Route::get('/', function () {
+			return view('admin.dashboard');
+		});
+	}
+);
+
