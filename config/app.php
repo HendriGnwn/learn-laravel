@@ -169,6 +169,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
 		Laravel\Passport\PassportServiceProvider::class,
 		Collective\Html\HtmlServiceProvider::class,
+		Yajra\Datatables\DatatablesServiceProvider::class,
 
         /*
          * Application Service Providers...

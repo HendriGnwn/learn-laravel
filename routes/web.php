@@ -39,3 +39,5 @@ Route::group([
 	}
 );
 
+Route::get('home/test', 'DatatableController@getBasic');
+Route::get('home/ajax-test', 'DatatableController@getBasicData');
